@@ -369,15 +369,10 @@ header .navbar ul li a:hover {
 
 .top {
   position: fixed;
-  bottom: 5.5rem;
+  bottom: 3.5rem;
   right: 2rem;
   z-index: 100;
   display: none;
-}
-
-.top i {
-  color: #eee;
-  font-size: 3rem;
 }
 
 /*
