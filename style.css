@@ -51,12 +51,6 @@ section {
   padding: 1rem;
 }
 
-.btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
 .btn {
   padding: 1rem 2rem;
   background: #fff;
@@ -201,6 +195,30 @@ header .navbar ul li a:hover {
   padding: 1rem 0;
 }
 
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 4rem;
+}
+
+.fa-x-twitter {
+  font-size: 4rem;
+}
+
 .about .row {
   display: flex;
   align-items: center;
@@ -235,7 +253,7 @@ header .navbar ul li a:hover {
 }
 
 .about .row .counter .box {
-  width: 15rem;
+  width: 17rem;
   background: #fff;
   border: 0.2rem solid var(--sub-color);
   padding: 2rem;
@@ -252,7 +270,7 @@ header .navbar ul li a:hover {
   color: #333;
 }
 
-.education .box-container {
+.skills .box-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -261,7 +279,7 @@ header .navbar ul li a:hover {
   padding-left: 3rem;
 }
 
-.education .box-container .box {
+.skills .box-container .box {
   width: 27rem;
   margin: 4rem 1rem;
   padding-left: 4rem;
@@ -269,27 +287,28 @@ header .navbar ul li a:hover {
   position: relative;
 }
 
-.education .box-container .box span {
-  font-size: 1.3rem;
+.skills .box-container .box span {
+  font-size: 1.4rem;
+  font-weight: 800;
   background: var(--sub-color);
   color: #333;
   border-radius: 5rem;
   padding: 0.5rem 2.5rem;
 }
 
-.education .box-container .box h3 {
+.skills .box-container .box h3 {
   font-size: 2rem;
   color: #333;
   padding-top: 1.5rem;
 }
 
-.education .box-container .box p {
+.skills .box-container .box p {
   font-size: 1.4rem;
   color: #444;
   padding: 1rem 0;
 }
 
-.education .box-container .box i {
+.skills .box-container .box i {
   position: absolute;
   top: -1.5rem;
   left: -2.5rem;
