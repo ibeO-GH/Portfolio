@@ -330,6 +330,7 @@ header .navbar ul li a:hover {
 }
 
 .projects .box-container .box {
+  position: relative;
   height: 20rem;
   width: 26rem;
   border-radius: 1rem;
@@ -338,14 +339,39 @@ header .navbar ul li a:hover {
   overflow: hidden;
 }
 
+.projects .box-container .box .project-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  align-items: baseline;
+  padding: 5rem 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 50%;
+  z-index: 2;
+}
+
+.projects .box-container .box .project-info h4 {
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
+
 .projects .box-container .box img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  z-index: 1;
 }
 
-.projects .box-container .box:hover img {
+.projects .box-container .box:hover,
+.projects .box-container .box:hover .project-info {
   transform: scale(1.2);
+  color: white;
+  transition: all 0.8s ease;
+  transform: translateY(-5px);
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 1.1rem;
 }
 
 .contact .row {
