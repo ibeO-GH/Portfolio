@@ -29,16 +29,16 @@ document
 
     switch (true) {
       case !name:
-        message = "Name is required.";
+        message = "All fields required.";
         break;
       case !email:
-        message = "Email is required.";
+        message = "All fields required.";
         break;
       case !subject:
-        message = "Subject is required.";
+        message = "All fields required.";
         break;
       case !textarea:
-        message = "Message is required.";
+        message = "All fields required.";
         break;
       default:
         message = "Form submitted successfully!";
@@ -48,6 +48,9 @@ document
   });
 
 const validationMessage = document.getElementById("validation-message");
-validationMessage.style.fontSize = "3rem";
-validationMessage.style.color = "var(--main-color)";
+validationMessage.style.fontSize = "2.5rem";
+validationMessage.style.color = "moccasin";
+validationMessage.style.backgroundColor = "#0e4168";
+validationMessage.style.width = "100%";
 validationMessage.style.textAlign = "center";
+validationMessage.style.marginTop = "1rem";

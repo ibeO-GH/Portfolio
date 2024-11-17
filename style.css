@@ -213,25 +213,28 @@ h1 {
 #socials-container {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
-  gap: 1rem;
+  margin-top: 4rem;
+  gap: 2rem;
 }
 
 /* ICONS */
 
 .icon {
   cursor: pointer;
-  height: 4rem;
+  font-size: 4rem;
+  color: #aaa;
 }
 
-.fa-x-twitter {
-  font-size: 4rem;
+.fa-x-twitter:hover,
+.fa-linkedin-in:hover,
+.fa-github:hover {
+  transform: scale(1.1);
 }
 
 .about p {
   font-size: 2rem;
   color: #ccc;
-  padding: 2rem 4.5rem;
+  padding: 2rem 6rem;
   line-height: 1.5;
 }
 
@@ -267,6 +270,7 @@ h1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding-right: 3rem;
 }
 
 .about .row .counter .box {
@@ -400,9 +404,10 @@ h1 {
   margin: 0 auto;
   height: 100%;
   object-fit: cover;
-  /* border: 5px solid var(--sub-color);
-  border-radius: 15px; */
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2), 0 6px 20px rgba(0, 0, 0, 0.8);
+  border: 5px solid #0e4168;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
   transition: transform 0.5s ease;
 }
 
@@ -456,12 +461,13 @@ h1 {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 0 2rem;
 }
 
 .contact .row .content {
   flex: 1 1 30rem;
-  padding: 2rem 6rem;
-  padding-bottom: 0;
+  padding: 2rem;
+  padding-left: 6rem;
 }
 
 .contact .row form {
@@ -523,4 +529,7 @@ h1 {
   right: 2rem;
   z-index: 100;
   display: none;
+  color: #f4f4f4;
+  cursor: pointer;
+  font-size: 4rem;
 }
