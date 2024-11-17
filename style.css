@@ -44,7 +44,7 @@ html::-webkit-scrollbar-thumb {
 
 body {
   /* background-color: var(--main-color); */
-  background-image: linear-gradient(120deg, #046ea7, #073050);
+  background-image: linear-gradient(120deg, #0e4168, #073050);
   padding-left: 35rem;
 }
 
